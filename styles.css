@@ -1,0 +1,123 @@
+ body {
+  font-family: sans-serif;
+ }
+
+section {
+  padding: 4px;
+}
+
+ 
+
+ article {
+  border: 1px dashed blue;
+  padding: 4px;
+ }
+
+ .heading {
+  grid-area: heading;
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .grid-container {
+  max-width: 1600px;
+  margin: auto;
+  border: 1px solid gray;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 75px 1fr 75px 2fr 3fr;
+  grid-gap: 4px;
+  grid-template-areas: 
+    'sideNavigation topNavigation '
+    'sideNavigation heading'
+    'sideNavigation jobMenu'
+    'sideNavigation graphs'
+    'sideNavigation description'
+    'sideNavigation description';
+}
+
+.job-menu {
+  grid-area: jobMenu;
+  display: flex;
+  align-items: flex-end;
+}
+
+.job-menu ul {
+  max-height: 30px;
+}
+
+.job-menu li {
+  display: inline;
+  margin: 20px;
+}
+
+
+
+.top-navigation {
+  border: 1px solid red;
+  padding: 4px;
+  grid-area: topNavigation;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr 1fr 1fr;
+}
+.graphs {
+  grid-area: graphs;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 4px;
+  padding: 4px;
+}
+
+.description {
+  grid-area: description;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 4px;
+  padding: 4px;
+}
+/*Side Bar Styles*/
+
+.side-navigation {
+  background-color: #6b7a8f;
+  color: white;
+  display: grid;
+  grid-template-rows: 300px 1fr 1fr 1fr;
+  grid-area: sideNavigation;
+}
+
+
+.headshot {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.side-nav-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-nav-name {
+  border-bottom: 3px inset #4a5563;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 10px
+   
+}
+
+.side-nav-menu {
+  border-bottom: 3px inset #4a5563;
+}
+
+.side-icon {
+  margin: 8px 10px ;
+}
+
+.side-nav-menu-item {
+  display: flex;
+  align-items: center;
+}
