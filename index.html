@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HIRE ME PLZ</title>
+  <title>My Trips</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" type="text/css" href="normalize.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
@@ -21,33 +21,33 @@
       </div>
       <section>
         <hr>
-        <p>Main</p>
+        <p class="nav-subheading">Main</p>
         <nav class="side-nav-menu">
-          <p class="side-nav-menu-item"><i class="small material-icons side-icon">home</i>Home</p>
-          <p class="side-nav-menu-item"><i class="small material-icons side-icon">business_center</i>About</p>
-          <p class="side-nav-menu-item"><i class="small material-icons side-icon">assignment</i>Trips</p>
-          <p class="side-nav-menu-item"><i class="small material-icons side-icon">date_range</i>Calendar</p>
+          <p class="side-nav-menu-item"><i class="fas fa-home side-icon"></i>Home</p>
+          <p class="side-nav-menu-item"><i class="fas fa-dna side-icon"></i>About</p>
+          <p class="side-nav-menu-item"><i class="fas fa-globe-americas side-icon"></i>Trips</p>
+          <p class="side-nav-menu-item"><i class="fas fa-calendar side-icon"></i>Calendar</p>
         </nav>
       </section>
       <section>
         <hr>
-        <p>Admin</p>
+        <p class="nav-subheading">Activities</p>
         <nav class="side-nav-menu">
-          <p class="side-nav-menu-item"><i class="small material-icons side-icon">person</i>Users</p>
-          <p class="side-nav-menu-item"><i class="small material-icons side-icon">pin_drop</i>Locations</p>
-          <p class="side-nav-menu-item"><i class="small material-icons side-icon">assignment</i>Workflows</p>
-          <p class="side-nav-menu-item"><i class="small material-icons side-icon">developer_board</i>Job Board</p>
-          <p class="side-nav-menu-item"><i class="small material-icons side-icon">share</i>Social</p>
+          <p class="side-nav-menu-item"><i class="fas fa-hiking side-icon"></i>Hiking</p>
+          <p class="side-nav-menu-item"><i class="fas fa-mountain side-icon"></i>Climbing</p>
+          <p class="side-nav-menu-item"><i class="fas fa-skiing-nordic side-icon"></i>Snow Sports</p>
+          <p class="side-nav-menu-item"><i class="fas fa-campground side-icon"></i>Camping</p>
+          <p class="side-nav-menu-item"><i class="fas fa-bicycle side-icon"></i>Cycling</p>
         </nav>
       </section>
       <section>
         <hr>
-        <p>Seasons</p>
+        <p class="nav-subheading">Seasons</p>
         <form class="side-nav-check">
-          <p class="side-nav-menu-item"><input class="side-icon" type="checkbox">Winter</p>
-          <p class="side-nav-menu-item"><input class="side-icon" type="checkbox">Spring</p>
-          <p class="side-nav-menu-item"><input class="side-icon" type="checkbox">Summer</p>
-          <p class="side-nav-menu-item"><input class="side-icon" type="checkbox">Fall</p>
+          <p class="side-nav-menu-item"><input class="side-icon winter-box" type="checkbox">Winter</p>
+          <p class="side-nav-menu-item"><input class="side-icon spring-box" type="checkbox">Spring</p>
+          <p class="side-nav-menu-item"><input class="side-icon summer-box" type="checkbox">Summer</p>
+          <p class="side-nav-menu-item"><input class="side-icon fall-box" type="checkbox">Fall</p>
         </form>
       </section>
     </section>
@@ -75,11 +75,18 @@
     </section>
     <section class="heading">
       <div class="job-title">
-        customer service rep
+        <h1>Roan Highlands</h1>
+        <div class="job-description-location">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Tennessee & North Carolina Border &#xb7; <span class="trip-preview">Preview This Trip</span></p>
+        </div>
       </div>
-      <div class="job-actions">
-        open and buttons lmaao
-      </div>
+      <section class="job-actions">
+        <div class="trip-status"><span class="dot"></span>Trip Completed</div>
+        <div class="action-icon"><i class="fas fa-bookmark"></i></div>
+        <div class="action-icon"><i class="fas fa-pen"></i></div>
+        <div class="action-icon"><i class="fas fa-trash"></i></div>
+      </section>
     </section>
     <nav class="job-menu">
       <ul>
@@ -92,13 +99,118 @@
         <li>Notifications</li>
       </ul>
     </nav>
-    <section class="graphs">
-      <article class="circle-graphs">Circle Graphs!</article>
-      <article class="bar-graphs">Bar Graph</article>
+    <section class="graph-container">
+      <article class="circle-graph-area">
+        <section class="circle-graphs">
+          <div class="graphs circle-graph1">
+            <h2 class="graph-number">6,286 ft.</h2>
+            <p>Elevation</p>
+          </div>
+          <div class="graphs circle-graph3">
+            <h2 class="graph-number">75%</h2>
+            <p>Cool</p>
+          </div>
+          <div class="graphs circle-graph2">
+            <h2 class="graph-number">Easy</h2>
+            <p>Difficulty</p>
+          </div>
+        </section>
+      </article>
+      <article class="bar-graphs">
+        <img src="images/index.png" class="bar-graph-img">
+      </article>
+      <div class="totals-container">
+        <section class="totals">
+          <p>CONCLUSION - Very cool and awesome trip.</p>
+        </section>
+      </div>
+      <div class="totals-container">
+        <section class="totals">
+          <p>A Random Bar Graph</p>
+        </section>
+      </div>
     </section>
-    <section class="description">
-      <article>Collapsable Description</article>
-      <article>Mini Side bar</article>
+    <div class="lines">
+      <i class="fas fa-chevron-circle-up page-line"></i>
+    </div>
+    <section class="trip-area">
+      <div class="trip-description-container">
+        <article class="trip-table-container">
+          <div class="table-heading">
+            <h3>Trip Description</h3>
+          </div>
+          <table class="trip-table">
+            <tr>
+              <td>Title</td>
+              <td>Roan Highlands</td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td>Roan Mountain<br>Tennessee & North Carolina Border</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td>Camping & Hiking</td>
+            </tr>
+            <tr>
+              <td>Dificulty</td>
+              <td>Moderate</td>
+            </tr>
+            <tr>
+              <td>Season</td>
+              <td>Spring & Summer</td>
+            </tr>
+            <tr>
+              <td>Length</td>
+              <td>3 days, 2 Nights<br>9 Mile Out and Back</td>
+            </tr>
+            <tr>
+              <td class="no-border">Description</td>
+              <td class="no-border">This was one of the most fun hikes accompanied with some of the most beautiful campsites I have had the pleasure of sleeping in. It is the perfect backpacking trip for a weekend getaway. I arrived at the carvers gap entracnce to the Appalachian Trail around 4:00 on Friday afternoon. This allowed plenty of time to climb the 1.5 miles to Roan High Knob and set up camp. It's a nice shaded hike up with low-grade switchbacks. The next morning I backtracked down from Roan High Knob and contiued on the AT for another 3 miles over the three largest balds on the enire trail, offering unobstructed 360 degree views for the entire day (don't forget sunscreen). We set up camp at the top of th final bald, Grassy Ridge Bald. There are tons of spots to pitch a tent all around the bald, it's best to try and grab one that is east facing so you can have watch the sunrise from your sleeping bag. Hand's down the best sunset and sunrise I have seen in my life. The next morning is a short 3 miles back to the parking area.</td>
+            </tr>
+          </table>
+        </article>
+      </div>
+      <article class="description-sidebar">
+        <div class="social-media facebook"><i class="fab fa-facebook"></i>Facebook</div>
+        <div class="social-media twitter"><i class="fab fa-twitter"></i> Twitter</div>
+        <div class="social-media linkedin"><i class="fab fa-linkedin"></i> Linkedin</div>
+        <section>
+          <h4>Link to this Trip</h4>
+          <p>This trip is very tight. Please share this link with people below!</p>
+          <div class="search-sidebar">
+            <div class="search-bar-container">
+              <input class="search-bar" type="text" value="link.com/roan-highlands">
+            </div>
+            <div class="search-container">
+              <button class="copy-button">COPY</button>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <section>
+          <h4>Hello, more stuff!</h4>
+          <p>This trip is very tight. Please share this link with people below!</p>
+          <div class="search-sidebar">
+            <div class="search-bar-container">
+              <input class="search-bar" type="text" value="link.com/roan-highlands">
+            </div>
+            <div class="link-container">
+              <button class="copy-button">COPY</button>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <section>
+          <h4>OK! I have run out of stuff</h4>
+          <p>This trip is very tight. Please share this link with people below!</p>
+          <div class="search-sidebar">
+            <div class="search-bar-container">
+              <input class="search-bar" type="text" value="link.com/roan-highlands">
+            </div>
+          </div>
+        </section>
+      </article>
     </section>
   </main>
 </body>
