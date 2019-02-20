@@ -5,7 +5,7 @@ For this project I was given a static comp and asked to recreate it. I was given
 
 ### Comp
 
-![Static Comp 2](images/static-comp-challenege-3.jpg "Static Comp 2")
+![Static Comp 2](images/static-comp-challenge-3.jpg "Static Comp 2")
 
 ### Final
 
